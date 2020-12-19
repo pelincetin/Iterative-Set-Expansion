@@ -14,15 +14,18 @@ pip3 install beautifulsoup4
 sudo apt-get update
 
 ** get stanfordnlp **
+
 wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip
 sudo apt-get install unzip
 unzip stanford-corenlp-full-2018-10-05.zip
 
 ** Install Java 13 **
+
 wget https://download.java.net/java/GA/jdk13.0.2/d4173c853231432d94f001e99d882ca7/8/GPL/openjdk-13.0.2_linux-x64_bin.tar.gz
 tar -xvzf openjdk-13.0.2_linux-x64_bin.tar.gz
 
 ** Set PATH and JAVA_HOME variables so that the java command is recognized **
+
 export PATH=/home/⟨your_UNI⟩/jdk-13.0.2/bin:$PATH
 export JAVA_HOME=/home/⟨your_UNI⟩/jdk-13.0.2 
 

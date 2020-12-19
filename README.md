@@ -7,36 +7,38 @@
 
 **install the necessary python packages**
 
-pip3 install google-api-python-client
-pip3 install stanfordnlp
-pip3 install sortedcontainers
-pip3 install beautifulsoup4
-sudo apt-get update
+- pip3 install google-api-python-client
+- pip3 install stanfordnlp
+- pip3 install sortedcontainers
+- pip3 install beautifulsoup4
+- sudo apt-get update
 
-** get stanfordnlp **
+**get stanfordnlp**
 
-wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip
-sudo apt-get install unzip
-unzip stanford-corenlp-full-2018-10-05.zip
+- wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip
+- sudo apt-get install unzip
+- unzip stanford-corenlp-full-2018-10-05.zip
 
-** Install Java 13 **
+**Install Java 13**
 
 wget https://download.java.net/java/GA/jdk13.0.2/d4173c853231432d94f001e99d882ca7/8/GPL/openjdk-13.0.2_linux-x64_bin.tar.gz
 tar -xvzf openjdk-13.0.2_linux-x64_bin.tar.gz
 
-** Set PATH and JAVA_HOME variables so that the java command is recognized **
+**Set PATH and JAVA_HOME variables so that the java command is recognized**
 
-export PATH=/home/⟨your_UNI⟩/jdk-13.0.2/bin:$PATH
-export JAVA_HOME=/home/⟨your_UNI⟩/jdk-13.0.2 
+- export PATH=/home/⟨your_UNI⟩/jdk-13.0.2/bin:$PATH
+- export JAVA_HOME=/home/⟨your_UNI⟩/jdk-13.0.2 
 
-** set classpath for stanfordnlp **
+**set classpath for stanfordnlp**
+
 export CORENLP_HOME=/home/⟨your_UNI⟩/stanford-corenlp-full-2018-10-05 
 
-** finally, you can run the project. **
-python3 project.py <Google API Key> <Google Search Engine ID> <relation> <confidence threshold> <seed query> <min number of tuples requested in output>
+**finally, you can run the project.**
+
+- python3 project.py <Google API Key> <Google Search Engine ID> <relation> <confidence threshold> <seed query> <min number of tuples requested in output>
 
 
-** Clear description of our program **
+**Clear description of our program**
 
 After having extracted the JSON API Key, Engine ID, the integer for the relation, extraction confidence threshold, seed query and the number of tuples from the command line argument, we created a while loop that will run as long as we don't reach k number of tuples, which we put in a set called X. 
 
